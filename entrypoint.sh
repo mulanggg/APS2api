@@ -22,4 +22,4 @@ fi
 
 # 使用 exec 确保系统信号能够直接透传给 Go 程序，支持 SIGHUP 配置热重载
 echo "[Entrypoint] 启动 Vertex AI Proxy 服务..."
-exec /app/vproxy
+echo "yes" | /app/vproxy
